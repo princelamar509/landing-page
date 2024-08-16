@@ -1,0 +1,87 @@
+/* General Section Styling */
+
+.works {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+h2 {
+  font-size: 2.5rem;
+color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+ 
+  letter-spacing: 2px;
+}
+
+/* Slideshow Container Styling */
+.works .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  padding: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slide Styling */
+.slides {
+  display: none;
+  width: 100%; /* Ensures slides take up the full container width */
+}
+
+.slides img {
+  width: 100%; /* Ensures image takes up the full width of the container */
+  height: 400px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensure image covers the entire area without distortion */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+/* Caption Styling */
+.works .text {
+  color: #1426f0;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+/* Active Slide */
+.works .slides.active {
+  display: block;
+}
+
+/* Dot Navigation */
+.works .dot-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.works .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  padding: 5px;
+}
+
+.dot.active, .works .dot:hover {
+  background-color: #717171;
+}
+
+/* Smooth Scroll Effect */
+.works .dot-container .dot {
+  scroll-behavior: smooth;
+}
+
+

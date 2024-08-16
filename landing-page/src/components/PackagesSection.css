@@ -1,0 +1,71 @@
+
+  
+  .packages {
+    padding: 50px 20px;
+    background-color: rgb(248, 244, 244);
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .packages h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  color: #333;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .package-item {
+    background: linear-gradient(
+      to right,
+      rgb(240, 239, 246) 0%,
+      rgb(54, 43, 212) 100%,
+      rgb(255, 255, 255) 100%);
+    padding: 40px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    width: 300px;
+    transition: all 0.3s ease;
+  }
+  
+  .package-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(47, 28, 255, 0.981);
+  }
+  
+  .package-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f7eff1;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .package-item p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #1322ec;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .price {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #0a0d19;
+  }
+  
+  .pricing-button {
+    background-color: #180de2;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: large;
+  }
+  
+  .pricing-button:hover {
+    background-color: #f4f4fa;
+    color: #000;
+  }
+  

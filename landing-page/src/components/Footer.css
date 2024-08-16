@@ -1,0 +1,29 @@
+footer {
+    background-color: rgb(10, 10, 206);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #160606; /* Change to the color you prefer on hover */
+    background-color: rgb(241, 241, 249);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #f5f1f1; /* Slightly lighter color for the text */
+}

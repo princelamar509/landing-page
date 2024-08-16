@@ -1,0 +1,207 @@
+/* General Section Styling */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-variant-ligatures: additional-ligatures;
+  padding: 50px;
+  background-color: #f5f5f5;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-direction: row;
+}
+
+/* Text Container Styling */
+.text-container {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.text-container h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.text-container h2::before {
+  content: '\f1ad'; /* FontAwesome building icon */
+  font-family: 'FontAwesome';
+  margin-right: 10px;
+  color: blue;
+}
+
+.text-container h3 {
+  font-size: 24px;
+  color: #1037e4;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text-container p {
+  font-size: 19px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center; 
+  position: relative;
+  background-color: transparent;
+}
+
+/* Slideshow Container Styling */
+.slideshow-container {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+  margin-left: 20px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  vertical-align: middle;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Ensure image scales correctly without distortion */
+}
+
+/* Fade animation for slideshow */
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Next & Previous Buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  user-select: none;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  margin-top: -80px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.prev {
+  left: 0px; /* Positioning outside the picture frame */
+}
+
+.next {
+  right: 0px; /* Positioning outside the picture frame */
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(45, 42, 42, 0.8);
+}
+
+/* Caption Container */
+.caption-container {
+  margin-top: 20px;
+  text-align: center;
+  background-color: blue;
+  padding: 12px 16px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  border-radius: 0 0 10px 10px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Thumbnail Image Styling */
+.demo {
+  opacity: 0.6;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  height: 100px; /* Set a fixed height for thumbnails */
+  object-fit: cover; /* Ensure image scales correctly without distortion */
+}
+
+.demo.active, .demo:hover {
+  opacity: 1;
+}
+
+/* Thumbnail Row Styling */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-container {
+    max-width: 100%;
+    padding-right: 0;
+    order: 1; /* Ensures the text container appears first */
+    margin-bottom: 20px;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    margin-left: 0;
+    order: 2; /* Ensures the slideshow appears second */
+  }
+
+  .prev, .next {
+    margin-top: -50px;
+  }
+
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
